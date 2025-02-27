@@ -1,0 +1,3 @@
+
+    const response = await fetch(`${host}/api/notes/updatenote/66cdcc256cead93e785d5878`);
+    
