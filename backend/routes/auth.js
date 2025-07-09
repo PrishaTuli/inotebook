@@ -17,15 +17,6 @@ router.post(
     body("password").isLength({ min: 5 }),
   ],
   async (req, res) => {
-    // obj={
-    //     a:'thios',
-    //     number:34
-    // }
-    // res.json(obj)
-    // console.log(req.body);
-    // res.send("hello");
-    // const user=User(req.body);
-    // user.save();
     let success=false;
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -42,10 +33,6 @@ router.post(
       name:req.body.name,
       password:secpas,
       email:req.body.email})
-    // }).then(user=>res.json(user));
-    // const user = new User(req.body);
-    // user.save();
-    // res.send(req.body);
     const data={
       user:{id:user.id}
     }
