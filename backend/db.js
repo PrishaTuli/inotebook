@@ -6,10 +6,3 @@
     }).catch((err)=>{console.log(err)})
  }
  module.exports=getconnection
-// const connectto=()=>{
-//     mongoose.connect(uri,()=>{
-//         console.log("connected successfully");
-//     })
-// }
-// module.exports=connectto;
-// "mongodb://localhost:27017/inotebook"
